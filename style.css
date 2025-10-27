@@ -28,7 +28,7 @@ body {
 .container {
   display: block;
   margin: 0 auto;
-  padding: 80px;
+  padding: 5px;
   width: 95%;
   background-color: hsl(0, 0%, 100%);
   border-radius: 8px;
@@ -45,7 +45,7 @@ body {
 
 .qr_info {
   text-align: center;
-  margin: 3rem auto;
+  margin: 3rem auto 5rem auto;
   padding: 10px;
   width: 100%;
 }
