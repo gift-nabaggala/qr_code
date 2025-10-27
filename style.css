@@ -5,15 +5,21 @@
 }
 
 .attribution {
+  width: 95%;
   font-size: 11px;
   text-align: center;
-  margin-bottom: 10px;
+  margin: 20px auto;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+  display: inline;
 }
 
 body {
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center; /* centers vertically */
+  height: 100vh;
   margin: 10rem;
   background-color: hsl(212, 45%, 89%);
   font-family: "Outfit";
@@ -23,20 +29,25 @@ body {
   display: block;
   margin: 0 auto;
   padding: 80px;
-  width: 45rem;
+  width: 95%;
   background-color: hsl(0, 0%, 100%);
   border-radius: 8px;
 }
 .qr_code {
-  width: 500px;
+  margin: 0 auto;
+}
+.qr_code img {
+  text-align: center;
+  width: 100%;
+
   border-radius: 8px;
 }
 
 .qr_info {
   text-align: center;
-  margin: 3rem;
+  margin: 3rem auto;
   padding: 10px;
-  width: 500px;
+  width: 100%;
 }
 .qr_info p {
   font-size: 15px;
@@ -46,12 +57,36 @@ body {
 
 @media screen and (max-width: 767px) {
   body {
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    align-items: center; /* centers vertically */
+    height: 100vh;
     width: 100%; /* or 375px if you want fixed */
+  }
+
+  .container {
+    width: 90%;
+    padding: 5px;
+  }
+  .qr_code {
+    margin: 30px;
+    width: 80%;
+  }
+  .attribution {
+    font-size: 9px;
+    margin-top: 5px;
   }
 }
 
 @media screen and (min-width: 768px) {
   body {
     width: 100%; /* or 1440px if fixed */
+  }
+
+  .container {
+    width: 70%;
+  }
+  .qr_code {
+    width: 65%;
   }
 }
